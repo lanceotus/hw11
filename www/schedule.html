@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="css/mainstyle.css">
+<link rel="stylesheet" href="css/schedule.css">
+<head>
+    <meta charset="UTF-8">
+    <title>Расписание занятий</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <header>
+        <div class="logo">Онлайн-обучение</div>
+        <div class="menu__item_group">
+            <div class="menu__item"><a href="../index.html" class="menu__text">Главная</a></div>
+            <div class="menu__item"><a href="courses.html" class="menu__text">Курсы</a></div>
+            <div class="menu__item"><a href="schedule.html" class="menu__text">Расписание</a></div>
+        </div>
+        <div class="menu__spacer"></div>
+        <div class="menu__item_group">
+            <div class="menu__item"><a href="register.html" class="menu__text">Регистрация</a></div>
+            <div class="menu__item"><a href="login.html" class="menu__text">Войти</a></div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="schedule_title">Расписание занятий</div>
+            <div class="schedule">
+                <div class="schedule__courses_column">
+                    <div class="schedule__course_tab schedule__course_tab_active"
+                         data-id="course_0" onclick="CourseTabClick(event)">
+                        Backend разработчик на PHP
+                    </div>
+                    <div class="schedule__course_tab" data-id="course_1" onclick="CourseTabClick(event)">
+                        Web-разработчик на Python
+                    </div>
+                    <div class="schedule__course_tab" data-id="course_2" onclick="CourseTabClick(event)">
+                        Разработчик JavaScript
+                    </div>
+                </div>
+                <div class="schedule__content_column">
+                    <div class="schedule__course_body schedule__course_body_active" data-id="coursebody_0">
+                        <div class="schedule__description">
+                            <p>
+                                Современные инструменты и лучшие практики для глубокого понимания
+                                процесса разработки на PHP<br><br>
+                                Что даст вам этот курс<br><br>
+                                - Глубокое знакомство с библиотеками PHP и особенностями языка<br>
+                                - Навыки проектирования приложений, работы с базами и файлами, веб-фронтендом<br>
+                                - Привычку к хорошему и чистому коду<br>
+                                - Владение тактиками по созданию высоконагруженных систем<br><br>
+                                Для реализации больших и долгосрочных проектов современному PHP-разработчику необходимо
+                                заботиться об архитектуре кода, применять паттерны проектирования, писать код в
+                                соответствии с принципами SOLID и поддерживать высокий code coverage своих unit-тестов.<br>
+                                Но профессия PHP Backend Developer требует знаний не только языка PHP, а ещё знаний
+                                инструментов, таких как базы данных, очереди, кеш-сервера, без которых немыслимо
+                                современное веб-приложение.<br><br>
+                                Минимальные знания<br><br>
+                                - Опыт разработки на PHP от одного года или опыт разработки на другом языке
+                                от 3 лет (приветствуются любые языки ООП).<br>
+                                - Знание основных структур данных и алгоритмов, принципов ООП, опыт работы с базами
+                                данных и понимание основ веб-разработки облегчат прохождение курса для программиста,
+                                но не являются обязательными.<br><br>
+                                Процесс обучения<br><br>
+                                Продолжительность курса 5 месяцев, четыре из которых - обучение, а на пятом учащиеся
+                                разделятся на команды и будут реализовывать микросервис, используя гибкие
+                                методологии разработки.<br><br>
+                                Формат проведения занятий - 2 раза в неделю по 2 академических часа
+                                    (1.5 астрономических часа) и 4 академических часа на домашнюю работу в неделю.
+                            </p>
+                        </div>
+                        <div class="schedule__lesson" data-id="lesson_0_0" onclick="LessonClick(event)">
+                            <div class="schedule__lesson_title">
+                                Подготовка к курсу
+                            </div>
+                            <div class="schedule__lesson_body" data-id="lessonbody_0_0">
+                                <div class="schedule__lesson_text">
+                                    <p>
+                                        - обсудить цели курса, коротко обсудить рассматриваемые темы<br>
+                                        - обсудить историю развития веб-приложений, состояние на текущий день<br>
+                                        - ввести общую терминологию<br>
+                                        - обсудить организационные вопросы, порядок сдачи и проверки домашних работ<br>
+                                    </p>
+                                </div>
+                                <div class="schedule__lesson_time">
+                                    Начало 27.05.2019 в 20:00
+                                </div>
+                            </div>
+                        </div>
+                        <div class="schedule__lesson" data-id="lesson_0_1" onclick="LessonClick(event)">
+                            <div class="schedule__lesson_title">
+                                Виртуализация, контейнеры и облачные вычисления
+                            </div>
+                            <div class="schedule__lesson_body" data-id="lessonbody_0_0">
+                                <div class="schedule__lesson_text">
+                                    <p>
+                                        - поговорить про виртуализацию и контейнеры<br>
+                                        - рассмотреть облачных провайдеров<br>
+                                        - рассмотреть экономику работы с публичным облаком, своим датацентром и т.д.<br>
+                                        - научиться работать с докером<br>
+                                    </p>
+                                </div>
+                                <div class="schedule__lesson_time">
+                                    Начало 30.05.2019 в 20:00
+                                </div>
+                            </div>
+                        </div>
+                        <div class="schedule__lesson" data-id="lesson_0_2" onclick="LessonClick(event)">
+                            <div class="schedule__lesson_title">
+                                Linux
+                            </div>
+                            <div class="schedule__lesson_body" data-id="lessonbody_0_0">
+                                <div class="schedule__lesson_text">
+                                    <p>
+                                        - объяснить актуальность Linux систем (почему сервера в основном
+                                        работают на этой ОС)<br>
+                                        - рассмотреть процессы, потоки<br>
+                                        - обсудить пользователей, привилегии<br>
+                                        - научиться использовать ряд полезных утилит (top, grep etc)<br>
+                                        - научиться использовать bash скрипты<br>
+                                    </p>
+                                </div>
+                                <div class="schedule__lesson_time">
+                                    Начало 03.06.2019 в 20:00
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="schedule__course_body" data-id="coursebody_1">
+                        <div class="schedule__description">
+                            <p>
+                                Курс предназначен для подготовки специалиста, который сможет не только решать рядовые
+                                задачи бекенд-разработки, но и сделать с нуля современную фронтенд часть.<br><br>
+                                Что даст вам этот курс<br><br>
+                                - Освоение разработки современной фронтенд-части с нуля;<br>
+                                - Способность решать рядовые задачи бекенд-разработки;<br>
+                                - Умение деплоить с помощью Fabric, заворачивать приложения в Docker-контейнеры,
+                                писать тесты и ботов;<br>
+                                - Владение NodeJS и ReactJS, ознакомление с другими платформами, фреймворками,
+                                библиотеками, приложениями.<br><br>
+                                Минимальные знания<br><br>
+                                - Основы синтаксиса Python 3.<br>
+                                - Основные модули стандартной библиотеки.<br>
+                                - Основы написания поддерживаемого кода.<br>
+                                - Основы SQL, html, css, JavaScript.<br>
+                                - Знание понятия асимптотической сложности.<br>
+                                - Умение работать в консоли и с git.<br>
+                                - Понимание, как и зачем писать автотесты.<br><br>
+                                Процесс обучения<br><br>
+                                Обучение проходит в формате вебинаров (онлайн). Слушателям предлагаются к выполнению
+                                домашние задания, которые позволят применить на практике полученные во время вебинаров
+                                знания. По каждому домашнему заданию преподаватель дает развернутый фидбек.
+                                Преподаватель находится в едином коммуникационном пространстве с группой на протяжении
+                                всего курса, т. е. в процессе обучения слушатель может задавать преподавателю
+                                уточняющие вопросы по материалам лекций и домашних заданий.
+                            </p>
+                        </div>
+                        <div class="schedule__lesson" data-id="lesson_1_0" onclick="LessonClick(event)">
+                            <div class="schedule__lesson_title">
+                                Тема 1
+                            </div>
+                            <div class="schedule__lesson_body" data-id="lessonbody_1_0">
+                                <div class="schedule__lesson_text">
+                                    <p>
+                                        - технические детали курса<br>
+                                        - декомпозиция<br>
+                                        - чистые функции<br>
+                                        - цикломатическая сложность<br>
+                                        - читаемость<br>
+                                        - фичеризм<br>
+                                        - поддерживаемость<br>
+                                        - статический анализ кода<br>
+                                    </p>
+                                </div>
+                                <div class="schedule__lesson_time">
+                                    Начало 29.07.2019 в 20:00
+                                </div>
+                            </div>
+                        </div>
+                        <div class="schedule__lesson" data-id="lesson_1_1" onclick="LessonClick(event)">
+                            <div class="schedule__lesson_title">
+                                Тема 2
+                            </div>
+                            <div class="schedule__lesson_body" data-id="lessonbody_0_0">
+                                <div class="schedule__lesson_text">
+                                    <p>
+                                        - объекты и переменные<br>
+                                        - структуры данных под капотом основных типов<br>
+                                        - list vs tuple<br>
+                                        - профилирование памяти<br>
+                                        - как работает сборщик мусора<br>
+                                    </p>
+                                </div>
+                                <div class="schedule__lesson_time">
+                                    Начало 01.08.2019 в 20:00
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="schedule__course_body" data-id="coursebody_2">
+                        <div class="schedule__description">
+                            <p>
+                                Полный курс по JavaScript для web-разработчиков, которые хотят вывести свои навыки
+                                программирования на новый профессиональный уровень<br><br>
+                                Что даст вам этот курс<br><br>
+                                Этот курс подойдет разработчикам, которые:<br>
+                                - хотят стать JavaScript FullStack разработчиками<br>
+                                - хотят больше веселья и хардкора с технологиями, больше сложных и комплексных
+                                задач в работе<br>
+                                - имеют опыт работы с одной технологией или языком программирования и хотят
+                                получить практические навыки других технологий или переквалифицироваться<br>
+                                - хотят улучшить свои технические скиллы и перейти на следующий
+                                профессиональный уровень<br><br>
+                                В рамках курса мы рассмотрим:<br><br>
+                                Ключевые особенности JavaScript - замыкания, особенности ООП и SOLID в JS,
+                                функционального и реактивного программирования, Promises и другие возможности ES6,
+                                Event Loop, а также разберём DOM API, Ajax и события в рамках разработки в браузере,
+                                и, конечно, прокачаем навыки в HTML и CSS. Научимся писать код на диалектах
+                                JavaScript, таких как TypeScript и JSX.<br><br>
+                                Помимо разработки клиентской части в браузере, мы также будем использовать серверную
+                                платформу NodeJS и её окружение. Изучим популярный фреймворк Angular с реактивными
+                                возможностями RxJS, а также библиотеки для написания web-приложений - ReactJS, Redux и
+                                современные подходы к разработке UI, такие как Polymer и набирающий звёзды Vue.<br><br>
+                                Мы будем собирать проекты для production с помощью Webpack, хранить данные в MongoDB,
+                                использовать TDD подход и писать тесты на различных фреймворках и уровнях.<br><br>
+                                По окончании курса студент будет:<br><br>
+                                - Понимать принципы работы современных JavaScript фреймворков и библиотек<br>
+                                - Уметь применять паттерны проектирования (Event Loop, Flux, Immutable, Virtual DOM,
+                                Dependency Injection, Observables)<br>
+                                - Знать подходы при проектировании, организации, контроля состояния и тестирования
+                                серверных и клиентских приложений<br>
+                                - Выбирать подходящие инструменты для проекта<br>
+                                - Тестировать проект unit-тестами на разных уровнях<br>
+                                - Создавать веб-приложения с использованием современных технологий
+                            </p>
+                        </div>
+                        <div class="schedule__lesson" data-id="lesson_2_0" onclick="LessonClick(event)">
+                            <div class="schedule__lesson_title">
+                                Тема 1: Введение в курс Modern JavaScript Frameworks
+                            </div>
+                            <div class="schedule__lesson_body" data-id="lessonbody_2_0">
+                                <div class="schedule__lesson_text">
+                                    <p>
+                                        Участники смогут:<br>
+                                        - Познакомиться с преподавателем и с программой курса, понимать как она
+                                        построена и какие полезные навыки они получат<br>
+                                        - Вспомнить основные возможности языка JavaScript<br>
+                                        - Применять техники языка, которые помогут при изучении фреймворков
+                                    </p>
+                                </div>
+                                <div class="schedule__lesson_time">
+                                    Начало 27.06.2019 в 20:00
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        &copy; 2019 Роман Храповицкий
+    </footer>
+    <script src="js/schedule.js"></script>
+</body>
+</html>

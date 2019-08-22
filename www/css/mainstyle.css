@@ -1,0 +1,115 @@
+body {
+    background-color: #eeeeee;
+    color: #333;
+    padding: 0;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: Roboto, sans-serif;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 1 0 auto;
+    align-content: flex-start;
+    margin: 50px 10% 50px 10%;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background: linear-gradient(to right, #4444cc, #8844aa);
+    margin: 0;
+    padding: 0;
+}
+.logo {
+    height: 100%;
+    float: left;
+    color: #FFFFFF;
+    font-size: 20pt;
+    font-family: Verdana, Georgia, Times, serif;
+    font-weight: bold;
+    padding-top: 20px;
+    padding-left: 40px;
+    padding-right: 80px;
+}
+
+.menu__item {
+    padding: 25px 20px;
+    margin: 0;
+}
+
+.menu__item_group {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin: 0;
+    padding: 0;
+}
+
+.menu__text {
+    color: #FFFFFF;
+    font-size: 16pt;
+    font-family: Verdana, Georgia, Times, serif;
+    font-weight: normal;
+    text-decoration-line: none;
+}
+
+.menu__spacer {
+    flex-grow: 1;
+    margin: 0;
+    padding: 0;
+}
+
+footer {
+    background: linear-gradient(to right, #4348c4, #8d43a8);
+    height: 40px;
+    width: 100%;
+    margin: 0;
+    padding: 20px 0 0 0;
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 10pt;
+    font-family: Verdana, Georgia, Times, serif;
+    font-weight: normal;
+    text-decoration-line: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    text-align: center;
+    color: #000000;
+    font-size: 24pt;
+    font-weight: normal;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+}
+
+.info_box {
+    position: fixed;
+    left: 50px;
+    bottom: 50px;
+    padding: 10px;
+    margin: 0;
+    border-radius: 5px;
+    border-color: #000000;
+    background: #FFFFFF;
+    color: #000000;
+    font-size: 10pt;
+    font-family: Verdana, Georgia, Times, serif;
+    font-weight: normal;
+    text-decoration-line: none;
+    opacity: 0.75;
+    visibility: hidden;
+}
